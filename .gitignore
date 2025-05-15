@@ -1,0 +1,7 @@
+.terraform
+.terraform.lock.hcl
+.DS_Store
+plan/
+plan
+plan.tfplan/
+plan.tfplan
