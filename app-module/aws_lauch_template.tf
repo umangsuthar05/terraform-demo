@@ -19,7 +19,7 @@ resource "aws_launch_template" "default" {
 
   network_interfaces {
     associate_public_ip_address = true
-    security_groups = [aws_security_group.ec2]
+    security_groups = [aws_security_group.ec2.id]  # Changed this line to reference the security group ID
     delete_on_termination = true
 }
 

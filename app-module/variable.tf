@@ -42,10 +42,15 @@ variable "environment" {
   description = "Environment of the instance"
 }
 
-variable "terraform_shared_module_output" {
-  type = object({
-    elb_security_group_id = string
-  }
-  )
+variable "health_check_listener_arn" {
+  type = string
+  description = "Health check listener ARN of the instance" 
+  
+}
+
+variable "elb_security_group_id" {
+  type = string
+  description = "ELB security group ID of the instance"
+  
 }
 
